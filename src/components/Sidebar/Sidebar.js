@@ -200,7 +200,7 @@ export default function Sidebar() {
                         : "text-blueGray-300")
                     }
                   ></i>{" "}
-                  Patient Data
+                  Profile
                 </Link>
               </li>
 
@@ -222,7 +222,29 @@ export default function Sidebar() {
                         : "text-blueGray-300")
                     }
                   ></i>{" "}
-                  History
+                  Medication
+                </Link>
+              </li>
+
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/admin/settings") !== -1
+                      ? "text-lightBlue-500 hover:text-lightBlue-600"
+                      : "text-blueGray-700 hover:text-blueGray-500")
+                  }
+                  to="/admin/settings"
+                >
+                  <i
+                    className={
+                      "fas fa-tools mr-2 text-sm " +
+                      (window.location.href.indexOf("/admin/settings") !== -1
+                        ? "opacity-75"
+                        : "text-blueGray-300")
+                    }
+                  ></i>{" "}
+                  Laboratory / Diagnostic
                 </Link>
               </li>
               <li className="items-center">
@@ -243,144 +265,8 @@ export default function Sidebar() {
                         : "text-blueGray-300")
                     }
                   ></i>{" "}
-                  Assesment
+                  Doctors Order
                 </Link>
-              </li>
-              <li className="items-center">
-                <Link
-                  className={
-                    "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/admin/settings") !== -1
-                      ? "text-lightBlue-500 hover:text-lightBlue-600"
-                      : "text-blueGray-700 hover:text-blueGray-500")
-                  }
-                  to="/admin/settings"
-                >
-                  <i
-                    className={
-                      "fas fa-tools mr-2 text-sm " +
-                      (window.location.href.indexOf("/admin/settings") !== -1
-                        ? "opacity-75"
-                        : "text-blueGray-300")
-                    }
-                  ></i>{" "}
-                  Diagnosis
-                </Link>
-                <li className="items-center">
-                  <Link
-                    className={
-                      "text-xs uppercase py-3 font-bold block " +
-                      (window.location.href.indexOf("/admin/settings") !== -1
-                        ? "text-lightBlue-500 hover:text-lightBlue-600"
-                        : "text-blueGray-700 hover:text-blueGray-500")
-                    }
-                    to="/admin/settings"
-                  >
-                    <i
-                      className={
-                        "fas fa-tools mr-2 text-sm " +
-                        (window.location.href.indexOf("/admin/settings") !== -1
-                          ? "opacity-75"
-                          : "text-blueGray-300")
-                      }
-                    ></i>{" "}
-                    Medication
-                  </Link>
-                  <li className="items-center">
-                    <Link
-                      className={
-                        "text-xs uppercase py-3 font-bold block " +
-                        (window.location.href.indexOf("/admin/settings") !== -1
-                          ? "text-lightBlue-500 hover:text-lightBlue-600"
-                          : "text-blueGray-700 hover:text-blueGray-500")
-                      }
-                      to="/admin/settings"
-                    >
-                      <i
-                        className={
-                          "fas fa-tools mr-2 text-sm " +
-                          (window.location.href.indexOf("/admin/settings") !==
-                          -1
-                            ? "opacity-75"
-                            : "text-blueGray-300")
-                        }
-                      ></i>{" "}
-                      Prodcedures
-                    </Link>
-                    <li className="items-center">
-                      <Link
-                        className={
-                          "text-xs uppercase py-3 font-bold block " +
-                          (window.location.href.indexOf("/admin/settings") !==
-                          -1
-                            ? "text-lightBlue-500 hover:text-lightBlue-600"
-                            : "text-blueGray-700 hover:text-blueGray-500")
-                        }
-                        to="/admin/settings"
-                      >
-                        <i
-                          className={
-                            "fas fa-tools mr-2 text-sm " +
-                            (window.location.href.indexOf("/admin/settings") !==
-                            -1
-                              ? "opacity-75"
-                              : "text-blueGray-300")
-                          }
-                        ></i>{" "}
-                        Laboratory / Diagnostic
-                      </Link>
-                      <li className="items-center">
-                        <Link
-                          className={
-                            "text-xs uppercase py-3 font-bold block " +
-                            (window.location.href.indexOf("/admin/settings") !==
-                            -1
-                              ? "text-lightBlue-500 hover:text-lightBlue-600"
-                              : "text-blueGray-700 hover:text-blueGray-500")
-                          }
-                          to="/admin/settings"
-                        >
-                          <i
-                            className={
-                              "fas fa-tools mr-2 text-sm " +
-                              (window.location.href.indexOf(
-                                "/admin/settings"
-                              ) !== -1
-                                ? "opacity-75"
-                                : "text-blueGray-300")
-                            }
-                          ></i>{" "}
-                          Diet
-                        </Link>
-                        <li className="items-center">
-                          <Link
-                            className={
-                              "text-xs uppercase py-3 font-bold block " +
-                              (window.location.href.indexOf(
-                                "/admin/settings"
-                              ) !== -1
-                                ? "text-lightBlue-500 hover:text-lightBlue-600"
-                                : "text-blueGray-700 hover:text-blueGray-500")
-                            }
-                            to="/admin/settings"
-                          >
-                            <i
-                              className={
-                                "fas fa-tools mr-2 text-sm " +
-                                (window.location.href.indexOf(
-                                  "/admin/settings"
-                                ) !== -1
-                                  ? "opacity-75"
-                                  : "text-blueGray-300")
-                              }
-                            ></i>{" "}
-                            Doctors Order
-                          </Link>
-                        </li>
-                      </li>
-                    </li>
-                  </li>
-                </li>
               </li>
             </ul>
           </div>
