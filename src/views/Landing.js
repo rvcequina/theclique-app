@@ -29,24 +29,10 @@ export default function Landing() {
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div className="pr-12">
                   <h1 className="text-white font-semibold text-5xl">
-                    We aim to create a patient information system
+                    Healing from Within: Your Journey to Digestive Wellness
+                    Starts Here
                   </h1>
-                  <p className="mt-4 text-lg text-blueGray-200">
-                    tailored specifically for gastroenterology cases designed to
-                    bridge the gap between patients and healthcare providers. By
-                    offering an intuitive platform, we strive to empower
-                    patients with easy-to-understand, credible information about
-                    their conditions, treatments, and care plans, while also
-                    streamlining the process for gastroenterologists to access
-                    and manage patient data efficiently. This system will
-                    include features like symptom tracking, educational
-                    resources, and secure communication tools to enhance
-                    patient-provider collaboration, ultimately improving the
-                    quality of care and fostering a more informed and engaged
-                    patient community. Our goal is to make managing
-                    gastrointestinal health more accessible, personalized, and
-                    effective for everyone involved.
-                  </p>
+                  <p className="mt-4 text-lg text-blueGray-200"></p>
                 </div>
               </div>
             </div>
@@ -214,13 +200,26 @@ export default function Landing() {
                   <div className="text-lightBlue-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-lightBlue-300">
                     <i className="fas fa-rocket text-xl"></i>
                   </div>
-                  <h3 className="text-3xl font-semibold">A growing company</h3>
+                  <h3 className="text-3xl font-semibold">
+                    We aim to create a patient information system{" "}
+                  </h3>
                   <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                    The extension comes with three pre-built pages to help you
-                    get started faster. You can change the text and images and
-                    you're good to go.
+                    tailored specifically for gastroenterology cases, designed
+                    to bridge the gap between patients and healthcare providers.
+                    By offering an intuitive platform, we strive to empower
+                    patients with easy-to-understand, credible information about
+                    their conditions, treatments, and care plans, while also
+                    streamlining the process for gastroenterologists to access
+                    and manage patient data efficiently. This system will
+                    include features like symptom tracking, educational
+                    resources, and secure communication tools to enhance
+                    patient-provider collaboration, ultimately improving the
+                    quality of care and fostering a more informed and engaged
+                    patient community. Our goal is to make managing
+                    gastrointestinal health more accessible, personalized, and
+                    effective for everyone involved.
                   </p>
-                  <ul className="list-none mt-6">
+                  {/* <ul className="list-none mt-6">
                     <li className="py-2">
                       <div className="flex items-center">
                         <div>
@@ -263,7 +262,7 @@ export default function Landing() {
                         </div>
                       </div>
                     </li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
             </div>
@@ -274,11 +273,24 @@ export default function Landing() {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold">Here are our heroes</h2>
+                <h2 className="text-4xl font-semibold">Our Vision</h2>
                 <p className="text-lg leading-relaxed m-4 text-blueGray-500">
-                  According to the National Oceanic and Atmospheric
-                  Administration, Ted, Scambos, NSIDClead scentist, puts the
-                  potentially record maximum.
+                  To become innovative nursing professionals who combine
+                  technology and healthcare, developing digital solutions to
+                  improve patient education, health promotion, and nursing
+                  practice.
+                </p>
+              </div>
+              <div className="w-full lg:w-6/12 px-4">
+                <h2 className="text-4xl font-semibold">Our Mission </h2>
+                <p className="text-lg leading-relaxed m-4 text-blueGray-500">
+                Our objective is to apply our nursing and
+                  informatics expertise to create accessible, informative, and
+                  user-friendly web-based tools that enable individuals and
+                  communities to make educated health decisions. We want to
+                  improve the delivery of health education through creative
+                  cooperation, evidence-based material, and responsible use of
+                  digital technology.
                 </p>
               </div>
             </div>

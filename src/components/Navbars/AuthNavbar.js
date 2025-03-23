@@ -35,25 +35,19 @@ export default function Navbar(props) {
             id="example-navbar-warning"
           >
             <ul className="flex flex-col lg:flex-row list-none mr-auto">
-              <li className="flex items-center">
-                <a
+              <li className="flex items-center m-2">
+                {/* <a
                   className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="https://www.creative-tim.com/learning-lab/tailwind/react/overview/notus?ref=nr-auth-navbar"
                 >
                   <i className="lg:text-blueGray-200 text-blueGray-400 far fa-file-alt text-lg leading-lg mr-2" />{" "}
                   Docs
-                </a>
+                </a> */}
+                &nbsp;
               </li>
+              
               <li className="flex items-center">
                 <Link
-                  className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-                  to="/"
-                >
-                  Home
-                </Link>
-              </li>
-              <li className="flex items-center">
-              <Link
                   className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
                   to="/"
                 >
@@ -61,28 +55,21 @@ export default function Navbar(props) {
                 </Link>
               </li>
               <li className="flex items-center">
-              <Link
+                <Link
                   className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
                   to="/"
                 >
                   About Us
                 </Link>
               </li>
-              <li className="flex items-center">
-              <Link
-                  className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-                  to="/"
-                >
-                  About Us
-                </Link>
-              </li>
+              
             </ul>
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-              <li className="flex items-center">
+              {/* <li className="flex items-center">
                 <PagesDropdown />
-              </li>
+              </li> */}
               <li className="flex items-center">
-              <Link
+                <Link
                   className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
                   to="/auth/login"
                 >
@@ -90,22 +77,23 @@ export default function Navbar(props) {
                 </Link>
               </li>
 
-              <li className="flex items-center">
-              <Link
-                  className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-                  to="/auth/register"
-                >
-                  Register
-                </Link>
-              </li>
+              
 
               <li className="flex items-center">
-                <button
+                <Link
+                  
+                  to="/auth/register"
+                >
+                  <button
                   className="bg-white text-blueGray-700 active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                   type="button"
                 >
-                  <i className="fas fa-arrow-alt-circle-down"></i> Download
+                 
+                  <i className="fas fa-user-plus"></i> Register
                 </button>
+                
+                </Link>
+                
               </li>
             </ul>
           </div>

@@ -1,7 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 export default function Login() {
+  const history = useHistory();
+  const handleNavigate = () => {
+    // Navigate to a parent route
+    history.push("/admin");
+  };
   return (
     <>
       <div className="container mx-auto px-4 h-full">
@@ -86,14 +91,13 @@ export default function Login() {
                   </div>
 
                   <div className="text-center mt-6">
-                    <Link to="admin/dashboard">
-                      <button
-                        className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
-                        type="button"
-                      >
-                        Sign In
-                      </button>
-                    </Link>
+                    <button
+                      onClick={handleNavigate}
+                      className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
+                      type="button"
+                    >
+                      Sign In
+                    </button>
                   </div>
                 </form>
               </div>
