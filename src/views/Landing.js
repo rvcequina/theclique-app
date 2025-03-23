@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import HEROBG from "../assets/img/hero-bg.jpg";
 import missionpic from "../assets/img/mission.jpg";
 import visionpic from "../assets/img/vission.jpg";
