@@ -145,12 +145,9 @@ export default function Footer() {
             <div className="w-full md:w-4/12 px-4 mx-auto text-center">
               <div className="text-sm text-blueGray-500 font-semibold py-1">
                 Copyright © {new Date().getFullYear()} NIS by{" "}
-                <a
-                  href="#"
-                  className="text-blueGray-500 hover:text-blueGray-800"
-                >
+                <div className="text-blueGray-500 hover:text-blueGray-800">
                   The Clique
-                </a>
+                </div>
                 .
               </div>
             </div>
