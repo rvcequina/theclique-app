@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import HEROBG from "../assets/img/hero-bg.jpg";
+import missionpic from "../assets/img/mission.jpg";
+import visionpic from "../assets/img/vission.jpg";
 // components
 
 import Navbar from "components/Navbars/AuthNavbar.js";
@@ -15,8 +17,7 @@ export default function Landing() {
           <div
             className="absolute top-0 w-full h-full bg-center bg-cover"
             style={{
-              backgroundImage:
-                "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')",
+              backgroundImage: `url(${HEROBG})`,
             }}
           >
             <span
@@ -67,10 +68,13 @@ export default function Landing() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
                       <i className="fas fa-award"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Awarded Agency</h6>
+                    <h6 className="text-xl font-semibold">
+                      Real-Time Health Monitoring
+                    </h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                      Divide details about your product or agency work into
-                      parts. A paragraph describing a feature will be enough.
+                      Users can keep track of their health history and vital
+                      signs in real-time, ensuring up-to-date information for
+                      better care
                     </p>
                   </div>
                 </div>
@@ -82,10 +86,17 @@ export default function Landing() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400">
                       <i className="fas fa-retweet"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Free Revisions</h6>
+                    <h6 className="text-xl font-semibold">
+                      {" "}
+                      Secure Access and Data Management{" "}
+                    </h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                      Keep you user engaged by providing meaningful information.
-                      Remember that by this time, the user is curious.
+                      We provide a secure login system that ensures both medical
+                      personnel and patients can safely access their data. This
+                      includes a patient portal for verifying appointments,
+                      prescriptions, and test results, as well as a medical
+                      dashboard for comprehensive control over patient
+                      information, evaluations, and therapies.
                     </p>
                   </div>
                 </div>
@@ -97,10 +108,14 @@ export default function Landing() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
                       <i className="fas fa-fingerprint"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Verified Company</h6>
+                    <h6 className="text-xl font-semibold">
+                      User Experience and Security
+                    </h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                      Write a few lines about each one. A paragraph describing a
-                      feature will be enough. Keep you user engaged!
+                      The system is designed for ease of use with
+                      straightforward navigation, and it prioritizes data
+                      security through role-based access and encryption to
+                      protect sensitive information.
                     </p>
                   </div>
                 </div>
@@ -113,29 +128,25 @@ export default function Landing() {
                   <i className="fas fa-user-friends text-xl"></i>
                 </div>
                 <h3 className="text-3xl mb-2 font-semibold leading-normal">
-                  Working with us is a pleasure
+                  Our Vision
                 </h3>
                 <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
-                  Don't let your uses guess by attaching tooltips and popoves to
-                  any element. Just make sure you enable them first via
-                  JavaScript.
+                  To become innovative nursing professionals who combine
+                  technology and healthcare, developing digital solutions to
+                  improve patient education, health promotion, and nursing
+                  practice.
                 </p>
-                <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-600">
-                  The kit comes with three pre-built pages to help you get
-                  started faster. You can change the text and images and you're
-                  good to go. Just make sure you enable them first via
-                  JavaScript.
-                </p>
-                <Link to="/" className="font-bold text-blueGray-700 mt-8">
+
+                {/* <Link to="/" className="font-bold text-blueGray-700 mt-8">
                   Check Notus React!
-                </Link>
+                </Link> */}
               </div>
 
               <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-lightBlue-500">
                   <img
                     alt="..."
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+                    src={visionpic}
                     className="w-full align-middle rounded-t-lg"
                   />
                   <blockquote className="relative p-8 mb-4">
@@ -151,12 +162,12 @@ export default function Landing() {
                       ></polygon>
                     </svg>
                     <h4 className="text-xl font-bold text-white">
-                      Top Notch Services
+                      Innovating Nursing, Empowering Lives: Bridging Technology
+                      and Healthcare for a Healthier Tomorrow.
                     </h4>
                     <p className="text-md font-light mt-2 text-white">
-                      The Arctic Ocean freezes every winter and much of the
-                      sea-ice then thaws every summer, and that process will
-                      continue whatever happens.
+                      Combining compassion with innovation to redefine nursing
+                      practices.
                     </p>
                   </blockquote>
                 </div>
@@ -192,7 +203,7 @@ export default function Landing() {
                 <img
                   alt="..."
                   className="max-w-full rounded-lg shadow-lg"
-                  src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                  src={missionpic}
                 />
               </div>
               <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
@@ -200,24 +211,15 @@ export default function Landing() {
                   <div className="text-lightBlue-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-lightBlue-300">
                     <i className="fas fa-rocket text-xl"></i>
                   </div>
-                  <h3 className="text-3xl font-semibold">
-                    We aim to create a patient information system{" "}
-                  </h3>
+                  <h3 className="text-3xl font-semibold">Our Mission </h3>
                   <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                    tailored specifically for gastroenterology cases, designed
-                    to bridge the gap between patients and healthcare providers.
-                    By offering an intuitive platform, we strive to empower
-                    patients with easy-to-understand, credible information about
-                    their conditions, treatments, and care plans, while also
-                    streamlining the process for gastroenterologists to access
-                    and manage patient data efficiently. This system will
-                    include features like symptom tracking, educational
-                    resources, and secure communication tools to enhance
-                    patient-provider collaboration, ultimately improving the
-                    quality of care and fostering a more informed and engaged
-                    patient community. Our goal is to make managing
-                    gastrointestinal health more accessible, personalized, and
-                    effective for everyone involved.
+                    Our objective is to apply our nursing and informatics
+                    expertise to create accessible, informative, and
+                    user-friendly web-based tools that enable individuals and
+                    communities to make educated health decisions. We want to
+                    improve the delivery of health education through creative
+                    cooperation, evidence-based material, and responsible use of
+                    digital technology.
                   </p>
                   {/* <ul className="list-none mt-6">
                     <li className="py-2">
@@ -273,24 +275,23 @@ export default function Landing() {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold">Our Vision</h2>
+                <h2 className="text-4xl font-semibold">
+                  We aim to create a patient information system
+                </h2>
                 <p className="text-lg leading-relaxed m-4 text-blueGray-500">
-                  To become innovative nursing professionals who combine
-                  technology and healthcare, developing digital solutions to
-                  improve patient education, health promotion, and nursing
-                  practice.
-                </p>
-              </div>
-              <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold">Our Mission </h2>
-                <p className="text-lg leading-relaxed m-4 text-blueGray-500">
-                Our objective is to apply our nursing and
-                  informatics expertise to create accessible, informative, and
-                  user-friendly web-based tools that enable individuals and
-                  communities to make educated health decisions. We want to
-                  improve the delivery of health education through creative
-                  cooperation, evidence-based material, and responsible use of
-                  digital technology.
+                  tailored specifically for gastroenterology cases, designed to
+                  bridge the gap between patients and healthcare providers. By
+                  offering an intuitive platform, we strive to empower patients
+                  with easy-to-understand, credible information about their
+                  conditions, treatments, and care plans, while also
+                  streamlining the process for gastroenterologists to access and
+                  manage patient data efficiently. This system will include
+                  features like symptom tracking, educational resources, and
+                  secure communication tools to enhance patient-provider
+                  collaboration, ultimately improving the quality of care and
+                  fostering a more informed and engaged patient community. Our
+                  goal is to make managing gastrointestinal health more
+                  accessible, personalized, and effective for everyone involved.
                 </p>
               </div>
             </div>
